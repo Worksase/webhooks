@@ -5,6 +5,7 @@ import os
 import colorama
 from os import name, system, getenv
 from colorama import Fore, init
+import requests
 
 
 if name == "nt":
@@ -22,7 +23,7 @@ mainbanner = (Fore.RED + """
                                  ██║ █╗ ██║█████╗  ██████╔╝███████║██║   ██║██║   ██║█████╔╝ 
                                  ██║███╗██║██╔══╝  ██╔══██╗██╔══██║██║   ██║██║   ██║██╔═██╗ 
                                  ╚███╔███╔╝███████╗██████╔╝██║  ██║╚██████╔╝╚██████╔╝██║  ██╗
-                                  ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝
+                                  ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ 
 """) 
 choix = (Fore.GREEN + """
                                  ____________________________________________________________
@@ -41,9 +42,10 @@ user_answer = input('[>]Veuillez entrer votre réponse: ')
 if user_answer == "1":
 
     webhook = input(Fore.YELLOW + "[>]Veuillez entrer le lien de votre webhook: ")
+    username = input(Fore.YELLOW + "[>]Veuillez entrer le pseudo de votre webhook: ")
     message = input("[>]Veuillez entrer le message à envoyer: ")
 
-    webhook = DiscordWebhook(url=webhook, content=message)
+    webhook = DiscordWebhook(url=webhook, content=message, username=username)
     response = webhook.execute()
 
     print("Le message " + Fore.RED + message + Fore.YELLOW +  " à bien été envoyé !")
@@ -53,11 +55,6 @@ if user_answer == "2":
     print(Fore.YELLOW + "https://discord.gg/SaDR4jgKt6")
 
     input("Pressez [ENTRER] pour retourner au menu")
-
-
-
-
-
 
 
 
