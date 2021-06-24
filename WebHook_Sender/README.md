@@ -16,7 +16,7 @@ Webhook_sender est un logiciel en python capable d'envoyer des messages normaux 
 
 ## Installation
 
-Pour l'installation, vous avez juste à lancer install.bat, vous attendez qu'il termine de téléacharger tout les packages dont le logiciel à besoin,  après cel, vous n'avez plus qu'a lancer le logiciel !
+Pour l'installation, vous avez juste à lancer install.bat, vous attendez qu'il termine de télécharger tout les packages dont le logiciel à besoin,  après cel, vous n'avez plus qu'a lancer le logiciel !
 
 
 
