@@ -46,7 +46,7 @@ choix = (Fore.GREEN + """
                                        3: Crédit                                                                                                                                                                                                          
                                  ____________________________________________________________  
 
-                                                https://discord.gg/SaDR4jgKt6                                                            
+                                                https://discord.gg/UhTN3UT9H7                                                           
 
 """)
 print(mainbanner)
@@ -91,5 +91,5 @@ if user_answer == "2":
     response = webhook.execute()
 
 if user_answer == "3":
-    print(Fore.YELLOW + "https://discord.gg/SaDR4jgKt6")
+    print(Fore.YELLOW + "https://discord.gg/UhTN3UT9H7")
     input("Pressez [ENTRER] pour retourner au menu")
