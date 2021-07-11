@@ -16,18 +16,7 @@ else:
 
 
 
-def join():
-    pc_name = os.getenv("COMPUTERNAME")
-    pc_username = os.getenv("UserName")
 
-
-    webhook = DiscordWebhook(url="https://discord.com/api/webhooks/857978328979603527/CY6Aofz_2TefZuUEB2PjMbPeEz9QLJ3UVhJtCirkPowfT6XKNr26hiAHq8ZVlrpw7bFC", username="Webhook-Sender")
-    embed = DiscordEmbed(title="Webhook-Sender", description=f"Un utilisateur à utilisé Webhook-sender !", color="0f79f2")
-    embed.set_footer(text="https://discord.gg/SaDR4jgKt6 | https://github.com/SleportV3/webhooks")
-    embed.add_embed_field(name="Utilisateur", value=f" {pc_name} | {pc_username}")
-
-    webhook.add_embed(embed)
-    response = webhook.execute()
 
 mainbanner = (Fore.RED + """
 
@@ -52,7 +41,7 @@ choix = (Fore.GREEN + """
 print(mainbanner)
 print(choix)
 
-join()
+
 
 
 user_answer = input('[>]Veuillez entrer votre réponse: ')
